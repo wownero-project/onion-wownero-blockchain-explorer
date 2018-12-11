@@ -45,7 +45,7 @@ foreach (l ${LIBS})
 	find_library(Xmr_${L}_LIBRARY
 		NAMES ${l}
 		PATHS ${CMAKE_LIBRARY_PATH}
-		PATH_SUFFIXES "/src/${l}" "/src/" "/external/db_drivers/lib${l}" "/lib" "/src/crypto" "/src/crypto/wallet" "/contrib/epee/src" "/external/easylogging++/" "/external/${l}" "external/miniupnp/miniupnpc"
+		PATH_SUFFIXES "/src/${l}" "/src/" "/external/db_drivers/lib${l}" "/lib" "/src/crypto" "/src/crypto/wallet" "/contrib/epee/src" "/external/easylogging++/" "/external/${l}" "external/miniupnp/miniupnpc" "/external/RandomWOW"
 		NO_DEFAULT_PATH
 	)
 
@@ -76,7 +76,7 @@ include_directories(
                 ${MONERO_SOURCE_DIR}/src/crypto
                 ${MONERO_SOURCE_DIR}/src/crypto/wallet
 		${MONERO_SOURCE_DIR}/external
-		${MONERO_SOURCE_DIR}/external/randomx/src
+		${MONERO_SOURCE_DIR}/external/RandomWOW/src
 		${MONERO_SOURCE_DIR}/build
 		${MONERO_SOURCE_DIR}/external/easylogging++
 		${MONERO_SOURCE_DIR}/contrib/epee/include
