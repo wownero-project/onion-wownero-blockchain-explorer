@@ -76,7 +76,7 @@ include_directories(
                 ${MONERO_SOURCE_DIR}/src/crypto
                 ${MONERO_SOURCE_DIR}/src/crypto/wallet
 		${MONERO_SOURCE_DIR}/external
-		${MONERO_SOURCE_DIR}/external/randomx/src
+		${MONERO_SOURCE_DIR}/external/RandomWOW/src
 		${MONERO_SOURCE_DIR}/build
 		${MONERO_SOURCE_DIR}/external/easylogging++
 		${MONERO_SOURCE_DIR}/contrib/epee/include
