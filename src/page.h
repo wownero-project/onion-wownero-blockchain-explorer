@@ -1448,12 +1448,12 @@ show_block_hex(size_t block_height, bool complete_blk)
 
             std::string complete_block_data_str;
 
-            if(!epee::serialization::store_t_to_binary(
+            /*if(!epee::serialization::store_t_to_binary(
                         complete_block_data, complete_block_data_str))
             {
                 cerr << "Failed to serialize complete_block_data\n";
                 return string {"Failed to obtain complete block data"};
-            }
+            }*/
 
             return epee::string_tools
                     ::buff_to_hex_nodelimer(complete_block_data_str);
@@ -1745,12 +1745,12 @@ show_ringmemberstx_jsonhex(string const& tx_hash_str)
 
     std::string complete_block_data_str;
 
-    if(!epee::serialization::store_t_to_binary(
+    /*if(!epee::serialization::store_t_to_binary(
                 complete_block_data, complete_block_data_str))
     {
         cerr << "Failed to serialize complete_block_data\n";
         return json {"error", "Failed to obtain complete block data"};
-    }
+    }*/
 
     tx_details txd = get_tx_details(tx);
 
